@@ -8,17 +8,226 @@
                 "How are you",
                 "Is anyone there",
                 "Hello",
-                "Good day"
+                "Good day",
+                "Greetings"
             ],
             "responses": [
-                "Hey",
-                "Hello, thanks for visiting",
-                "Hi there, what can i do for you?",
-                "Hi there, how can I healp you?"
+                "Hello! Welcome to the Education Council. How can I assist you today?",
+                "Hi there! How can I help you with your education?",
+                "Hey, how can I assist you with your educational needs today?"
             ]
         },
         {
-            
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Take care"
+            ],
+            "responses": [
+                "Goodbye! Feel free to return if you have more questions.",
+                "See you later! If you need further assistance, don't hesitate to ask.",
+                "Bye! Take care of yourself and your studies."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Appreciate it",
+                "Thank's a lot"
+            ],
+            "responses": [
+                "You're welcome!",
+                "No problem!",
+                "Glad I could assist you with your education!"
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "Help",
+                "Can you help me?",
+                "I need assistance"
+            ],
+            "responses": [
+                "Sure, I'm here to help. What do you need assistance with regarding your education?",
+                "Of course, just let me know what you need help with regarding your studies.",
+                "Absolutely, tell me what you need assistance with regarding your education."
+            ]
+        },
+        {
+            "tag": "about",
+            "patterns": [
+                "Tell me about the Education Council",
+                "What is the Education Council?",
+                "Can you provide information about the Education Council?"
+            ],
+            "responses": [
+                "The Education Council is dedicated to providing guidance and support to students, parents, and educators. We offer resources, advice, and information on various educational topics such as academic planning, career guidance, and educational policies. Our goal is to empower individuals to make informed decisions about their education and future."
+            ]
+        },
+        {
+            "tag": "academic_planning",
+            "patterns": [
+                "How can I plan my academic schedule?",
+                "Can you help me with academic planning?",
+                "I need assistance with course selection"
+            ],
+            "responses": [
+                "Academic planning is crucial for success in your education. You can start by evaluating your academic goals, interests, and graduation requirements. Our council can provide guidance on course selection, creating a balanced schedule, and mapping out your academic journey. Feel free to ask for assistance with academic planning."
+            ]
+        },
+        {
+            "tag": "career_guidance",
+            "patterns": [
+                "I need help with career guidance",
+                "Can you provide career advice?",
+                "How do I choose a career path?"
+            ],
+            "responses": [
+                "Career guidance is an important aspect of your education. We can help you explore different career paths, identify your strengths and interests, and develop a career plan that aligns with your goals. Whether you're considering specific professions or seeking advice on job searching and networking, our council is here to support you."
+            ]
+        },
+        {
+            "tag": "educational_policies",
+            "patterns": [
+                "What are the educational policies?",
+                "Can you explain educational regulations?",
+                "How do educational policies affect me?"
+            ],
+            "responses": [
+                "Educational policies are rules and regulations that govern various aspects of the education system, including curriculum standards, assessment procedures, and student rights. Understanding these policies can help you navigate your educational journey more effectively. Our council can provide information on relevant policies and how they impact students, parents, and educators."
+            ]
+        },
+        {
+            "tag": "parent_support",
+            "patterns": [
+                "How can I support my child's education?",
+                "Parental guidance for education",
+                "What can parents do to help with education?"
+            ],
+            "responses": [
+                "Parental support plays a crucial role in a child's education. We can provide advice and resources to help parents support their child's academic success, foster a positive learning environment at home, and communicate effectively with teachers and school staff. Whether you have questions about homework help, parent-teacher conferences, or educational enrichment activities, we're here to assist you."
+            ]
+        },
+        {
+            "tag": "student_resources",
+            "patterns": [
+                "What resources are available for students?",
+                "Can you recommend educational resources?",
+                "Where can I find helpful study materials?"
+            ],
+            "responses": [
+                "There are various resources available to support your studies, including textbooks, online tutorials, study groups, and academic support services. Our council can recommend specific resources based on your needs and provide guidance on how to access them effectively. Whether you need help with research, exam preparation, or time management, we're here to assist you."
+            ]
+        },
+        {
+            "tag": "feedback",
+            "patterns": [
+                "I have feedback",
+                "Feedback",
+                "I want to provide feedback"
+            ],
+            "responses": [
+                "We appreciate your feedback! Please feel free to share your thoughts and suggestions with us. Your input helps us improve our services and better meet the needs of students, parents, and educators. You can provide feedback directly to our council members or through our online feedback form. Thank you for helping us make a difference in education!"
+            ]
+        },
+        {
+            "tag": "financial_aid",
+            "patterns": [
+                "I need information about financial aid",
+                "Can you help me with financial aid?",
+                "How do I apply for scholarships?"
+            ],
+            "responses": [
+                "Financial aid can make higher education more affordable. We can provide information on different types of financial aid, including scholarships, grants, loans, and work-study programs. Additionally, we can assist you with navigating the financial aid application process, completing the Free Application for Federal Student Aid (FAFSA), and searching for scholarships that match your qualifications."
+            ]
+        },
+        {
+            "tag": "test_prep",
+            "patterns": [
+                "Do you have test preparation resources?",
+                "Can you help me prepare for exams?",
+                "How do I study for standardized tests?"
+            ],
+            "responses": [
+                "Effective test preparation can improve your performance on exams. Our council can recommend test preparation resources and strategies tailored to various standardized tests, including the SAT, ACT, GRE, GMAT, and TOEFL. Whether you prefer self-study materials, online courses, or tutoring services, we're here to help you prepare and succeed."
+            ]
+        },
+        {
+            "tag": "online_learning",
+            "patterns": [
+                "I need assistance with online learning",
+                "Can you provide tips for online classes?",
+                "How do I stay motivated while learning online?"
+            ],
+            "responses": [
+                "Online learning offers flexibility and convenience, but it also presents unique challenges. Our council can provide tips and strategies for success in online classes, including time management techniques, staying organized, and maintaining motivation. Whether you're new to online learning or seeking to improve your online study habits, we're here to support your academic journey."
+            ]
+        },
+        {
+            "tag": "choose_major_career_path",
+            "patterns": [
+                "How can I choose the right major or career path?",
+                "What major or career path should I choose?"
+            ],
+            "responses": [
+                "Choosing the right major or career path can be a significant decision. Our counselors can help you explore your interests, skills, and goals to determine a suitable direction for your academic and professional journey."
+            ]
+        },
+        {
+            "tag": "create_academic_plan",
+            "patterns": [
+                "What courses should I take to fulfill my graduation requirements?",
+                "How can I fulfill my graduation requirements?"
+            ],
+            "responses": [
+                "To fulfill your graduation requirements, it's essential to consult with your academic advisor and review your degree program's curriculum. Our counselors can assist you in understanding your degree requirements and planning your course schedule accordingly."
+            ]
+        },
+        {
+            "tag": "study_resources",
+            "patterns": [
+                "What resources are available for studying or preparing for exams?",
+                "Can you recommend study resources?"
+            ],
+            "responses": [
+                "There are various resources available to support your studies, including textbooks, online tutorials, study groups, and academic support services. Our counselors can recommend specific resources based on your needs and provide guidance on how to utilize them effectively."
+            ]
+        },
+        {
+            "tag": "study_skills",
+            "patterns": [
+                "Do you have any tips for improving my study skills?",
+                "How can I improve my study skills?"
+            ],
+            "responses": [
+                "Improving your study skills involves strategies such as time management, active learning techniques, and effective note-taking. Our counselors can provide tips and resources to help you enhance your study skills and academic performance."
+            ]
+        },
+        {
+            "tag": "improve_gpa",
+            "patterns": [
+                "How can I improve my GPA?",
+                "How to up my GPA?"
+            ],
+            "responses": [
+                "Improving your GPA requires dedication, focus, and effective study habits. Our counselors can help you identify areas for improvement, set academic goals, and develop a plan to raise your GPA over time."
+            ]
+        },
+        {
+            "tag": "academic_support",
+            "patterns": [
+                "I'm struggling in a particular subject. Can you provide tutoring or additional support?",
+                "Do you offer academic support services?",
+                "Can you give academic support?"
+            ],
+            "responses": [
+                "If you're struggling in a particular subject, our counselors can connect you with academic support services such as tutoring, study groups, or academic workshops to help you succeed academically."
+            ]
         }
     ]
 }
