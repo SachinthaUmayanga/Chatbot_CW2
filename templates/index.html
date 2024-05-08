@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ChatBot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <h1 class="text-center mb-4">AI ChatBot</h1>
+                <form>
+                <div id="chatbox">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <p class="botText"><span>Hi! I'm Your bot.</span></p>
+                    </div>
+                </div>
+                <div id="userInput" class="row mt-4">
+                    <div class="col-md-9">
+                        <input id="text" type="text" name="msg" placeholder="Type your message here" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" id="send" class="btn btn-warning btn-block">Send</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("form").on("submit", function(event) {
+                var rawText = $("#text").val();
+                var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+                $("#text").val("");
+                $("#chatbox").append(userHtml);
+                document.getElementById("userInput").scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                });
+                $.ajax({
+                    data: {
+                        msg: rawText,
+                    },
+                    type: "POST",
+                    url: "/get",
+                }).done(function(data) {
+                    var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+                    $("#chatbox").append($.parseHTML(botHtml));
+                    document.getElementById("userInput").scrollIntoView({
+                        block: "start",
+                        behavior: "smooth",
+                    });
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

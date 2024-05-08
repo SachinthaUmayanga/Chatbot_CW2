@@ -29,37 +29,17 @@ model.eval()
 
 bot_name = "Educationl Counsellor"
 
-print("Let's chat! (type 'quit' to exit)")
-while True:
-    # sentence = "do you use credit cards?"
-    sentence = input("You: ")
-    if sentence == "quit":
-        break
+# print("Let's chat! (type 'quit' to exit)")
+# while True:
+#     # sentence = "do you use credit cards?"
+#     sentence = input("You: ")
+#     if sentence == "quit":
+#         break
 
-    sentence = tokenize(sentence)
-    X = bag_of_words(sentence, all_words)
-    X = X.reshape(1, X.shape[0])
-    X = torch.from_numpy(X).to(device)
-
-    output = model(X)
-    _, predicted = torch.max(output, dim=1)
-
-    tag = tags[predicted.item()]
-
-    probs = torch.softmax(output, dim=1)
-    prob = probs[0][predicted.item()]
-    if prob.item() > 0.75:
-        for intent in intents['intents']:
-            if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
-    else:
-        print(f"{bot_name}: I do not understand...")
-# def get_response(msg:str) -> str:
-#     sentence = tokenize(msg)
+#     sentence = tokenize(sentence)
 #     X = bag_of_words(sentence, all_words)
 #     X = X.reshape(1, X.shape[0])
 #     X = torch.from_numpy(X).to(device)
-
 
 #     output = model(X)
 #     _, predicted = torch.max(output, dim=1)
@@ -71,7 +51,28 @@ while True:
 #     if prob.item() > 0.75:
 #         for intent in intents['intents']:
 #             if tag == intent["tag"]:
-#                 return random.choice(intent['responses'])
-#     return "I do not understand..."
+#                 print(f"{bot_name}: {random.choice(intent['responses'])}")
+#     else:
+#         print(f"{bot_name}: I do not understand...")
+
+def get_response(msg:str) -> str:
+    sentence = tokenize(msg)
+    X = bag_of_words(sentence, all_words)
+    X = X.reshape(1, X.shape[0])
+    X = torch.from_numpy(X).to(device)
+
+
+    output = model(X)
+    _, predicted = torch.max(output, dim=1)
+
+    tag = tags[predicted.item()]
+
+    probs = torch.softmax(output, dim=1)
+    prob = probs[0][predicted.item()]
+    if prob.item() > 0.75:
+        for intent in intents['intents']:
+            if tag == intent["tag"]:
+                return random.choice(intent['responses'])
+    return "I do not understand..."
 
 # get_response("Hello world")
