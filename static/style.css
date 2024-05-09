@@ -38,6 +38,8 @@ h1 {
     color: #fff;
     margin-left: auto;
     border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .botText {
@@ -45,6 +47,8 @@ h1 {
     color: #fff;
     margin-right: auto;
     border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 #userInput {
