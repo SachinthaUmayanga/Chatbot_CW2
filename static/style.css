@@ -12,7 +12,8 @@ h1 {
 }
 
 #chatbox {
-    max-height: 400px;
+    /* max-height: 400px; */
+    height: 400px;
     overflow-y: auto;
     border: 1px solid #ced4da;
     border-radius: 10px;
